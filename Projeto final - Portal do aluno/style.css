@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-de-fundo: linear-gradient(0deg, rgba(225, 235, 255, 0.20) 0%, rgba(225, 235, 255, 0.20) 100%), #E1EBFF;
+}
+
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    overflow: visible;
+}
+
+#fundo {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+
+#imagem-de-fundo {
+    width: 40vw;
+    min-height: 50vw;
+    opacity: 0.30000001192092896;
+    background: url('imagens/fundo.svg'), lightgray 50% / cover no-repeat;
+}
+
+#segundo-fundo {
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background: var(--cor-de-fundo);
+    margin: auto;
+
+}
+
+#logo {
+    width: 40vw;
+    height: 117.264px;
+    margin-left: 10vw;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    align-self: flex-start;
+    background: url('imagens/senac.svg') no-repeat, #E1EBFF 50% / contain;
+}
+
+#texto {
+    width: 48%;
+    max-width: 800px; /* Define uma largura máxima */
+    height: 13.1vw;
+    max-height: 250px; /* Define uma altura máxima */
+    flex-shrink: 0;
+    margin-left: 10vw;
+    color: #000;
+    font-family: Inter;
+    font-size: 2.2vmin; /* Utiliza vmin para tamanho de fonte responsivo */
+    font-style: normal;
+    line-height: normal;
+}
+
+#titulo {
+    font-weight: 700;
+    margin-bottom: 10px;
+    /* Distância ajustada da margem inferior */
+    margin-top: 20px;
+    /* Distância ajustada da margem superior */
+}
+
+#descricao {
+    font-weight: normal;
+    margin-bottom: 10px;
+    /* Distância ajustada da margem inferior */
+}
+
+#portal {
+    width: 31.4vw;
+    max-width: 400px; /* Define uma largura máxima */
+    height: 3.2vw;
+    max-height: 40px; /* Define uma altura máxima */
+    flex-shrink: 0;
+    color: #000;
+    font-family: Inter;
+    font-size: 3vmin; /* Utiliza vmin para tamanho de fonte responsivo */
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 3vw;
+    margin-bottom: 2vw;
+}
+
+#nome-aluno {
+    width: 13.4vw;
+    max-width: 170px; /* Define uma largura máxima */
+    height: 2.4vw;
+    max-height: 30px; /* Define uma altura máxima */
+    flex-shrink: 0;
+    color: #000;
+    font-family: Inter;
+    font-size: 2vmin; /* Utiliza vmin para tamanho de fonte responsivo */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 1vw;
+}
+
+#caixa-texto {
+    width: 22.1vw;
+    max-width: 430px; /* Define uma largura máxima */
+    height: 4.4vw;
+    max-height: 40px; /* Define uma altura máxima */
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #FFF;
+}
+
+#senha {
+    width: 13.4vw;
+    max-width: 170px; /* Define uma largura máxima */
+    height: 2.4vw;
+    max-height: 30px; /* Define uma altura máxima */
+    flex-shrink: 0;
+    color: #000;
+    font-family: Inter;
+    font-size: 2vmin; /* Utiliza vmin para tamanho de fonte responsivo */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 3vw;
+}
+
+#caixa-senha {
+    width: 22.1vw;
+    max-width: 430px; /* Define uma largura máxima */
+    height: 4.4vw;
+    max-height: 40px; /* Define uma altura máxima */
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #FFF;
+}
+
+#botao-entrar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12.9vw;
+    max-width: 240px; /* Define uma largura máxima */
+    height: 4.4vw;
+    max-height: 40px; /* Define uma altura máxima */
+    flex-shrink: 0;
+    background-color: #052F83;
+    color: #fff;
+    font-family: Inter;
+    font-size: 1.8vmin; /* Utiliza vmin para tamanho de fonte responsivo */
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 4vw;
+    border-radius: 15px;
+    cursor: pointer;
+    float: left;
+}
+
+#esqueci-senha {
+    width: 27.3vw;
+    max-width: 350px; /* Define uma largura máxima */
+    height: 2.8vw;
+    max-height: 40px; /* Define uma altura máxima */
+    flex-shrink: 0;
+    color: #052F83;
+    font-family: Inter;
+    font-size: 2vmin; /* Utiliza vmin para tamanho de fonte responsivo */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: -1vw;
+    cursor: pointer;
+}
+
+#quadro-container {
+    display: flex;
+    align-items: center;
+    margin-right: 5vmin; 
+}
+
+#quadro {
+    width: 1.9vw;
+    height: 1.5vw;
+    flex-shrink: 0;
+    margin-right: 2vmin; 
+    margin-bottom: -8vmin;
+}
+
+#lembrar {
+    color: #000;
+    font-family: Inter;
+    font-size: 2vmin;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    margin-bottom: -8vmin;
+    flex-shrink: 0;
+    width: 115px;
+    height: 31px;
+
+}
+
+#entrar-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3vmin;
+}
